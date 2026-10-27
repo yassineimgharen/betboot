@@ -1,0 +1,25 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+*.db
+artifacts/
+.next/
+node_modules/
+.env.*
+!.env.example
+frontend/test-results/
+frontend/playwright-report/
+*.tsbuildinfo
+
+.betboot.lock
+.cache/
+data/
+venv/
+# Raw third-party captures: not ours to republish.
+sofascore_data_*.json
+# Accidental ImageMagick screen capture (shell `import argparse`).
+scripts/argparse

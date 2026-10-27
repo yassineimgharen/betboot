@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "betboot"
+version = "0.3.0"
+description = "Autonomous football research for manual betting decisions"
+requires-python = ">=3.12"
+dependencies = [
+  "httpx>=0.28,<1", "pydantic-settings>=2.7,<3", "sqlalchemy>=2.0,<3",
+  "numpy>=2,<3", "scipy>=1.15,<2", "scikit-learn>=1.6,<2"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "pytest-asyncio>=0.25,<2", "ruff>=0.9,<1"]
+
+[project.scripts]
+betboot = "betboot.terminal:main"
+
+[tool.setuptools.packages.find]
+where = ["backend"]
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100

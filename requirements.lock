@@ -1,0 +1,7 @@
+# Terminal runtime: install with python -m pip install -r requirements.lock
+httpx==0.28.1
+pydantic-settings==2.16.1
+SQLAlchemy==2.1.6
+numpy==2.5.4
+scipy==1.18.1
+scikit-learn==1.9.1

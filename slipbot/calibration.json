@@ -1,0 +1,130 @@
+{
+  "dc_weight": 0.5,
+  "dc_weight_matches": 2733,
+  "model_weight": 0.05,
+  "model_weight_matches": 192,
+  "goals_model_weight": 0.0,
+  "goals_model_weight_observations": 0,
+  "markets": {
+    "1X2": {
+      "model_log_loss": 0.5856,
+      "base_log_loss": 0.6253,
+      "model_band": {
+        "n": 329,
+        "predicted": 0.7319,
+        "observed": 0.7751
+      },
+      "model_beats_base": true,
+      "market_band": {
+        "n": 37,
+        "predicted": 0.7129,
+        "observed": 0.6757
+      },
+      "market_band_other": {
+        "n": 2201,
+        "predicted": 0.744,
+        "observed": 0.7874
+      },
+      "validated": true
+    },
+    "DC": {
+      "model_log_loss": 0.5856,
+      "base_log_loss": 0.6253,
+      "model_band": {
+        "n": 5326,
+        "predicted": 0.7546,
+        "observed": 0.7546
+      },
+      "model_beats_base": true,
+      "market_band": {
+        "n": 528,
+        "predicted": 0.761,
+        "observed": 0.7898
+      },
+      "market_band_other": {
+        "n": 26080,
+        "predicted": 0.7644,
+        "observed": 0.7747
+      },
+      "validated": true
+    },
+    "OU0.5": {
+      "model_log_loss": 0.2267,
+      "base_log_loss": 0.2282,
+      "model_band": {
+        "n": 2733,
+        "predicted": 0.9316,
+        "observed": 0.9396
+      },
+      "model_beats_base": true,
+      "validated": true
+    },
+    "OU1.5": {
+      "model_log_loss": 0.5271,
+      "base_log_loss": 0.5312,
+      "model_band": {
+        "n": 2705,
+        "predicted": 0.7566,
+        "observed": 0.7749
+      },
+      "model_beats_base": true,
+      "validated": true
+    },
+    "OU2.5": {
+      "model_log_loss": 0.6824,
+      "base_log_loss": 0.6869,
+      "model_band": {
+        "n": 121,
+        "predicted": 0.6892,
+        "observed": 0.7934
+      },
+      "model_beats_base": true,
+      "validated": true
+    },
+    "OU3.5": {
+      "model_log_loss": 0.5947,
+      "base_log_loss": 0.6006,
+      "model_band": {
+        "n": 2122,
+        "predicted": 0.7322,
+        "observed": 0.73
+      },
+      "model_beats_base": true,
+      "validated": true
+    },
+    "OU4.5": {
+      "model_log_loss": 0.3884,
+      "base_log_loss": 0.3933,
+      "model_band": {
+        "n": 2720,
+        "predicted": 0.8535,
+        "observed": 0.8662
+      },
+      "model_beats_base": true,
+      "validated": true
+    },
+    "BTTS": {
+      "model_log_loss": 0.6845,
+      "base_log_loss": 0.6852,
+      "model_band": {
+        "n": 89,
+        "predicted": 0.6703,
+        "observed": 0.618
+      },
+      "model_beats_base": true,
+      "validated": true
+    },
+    "AH": {
+      "model_log_loss": 0.4321,
+      "base_log_loss": 0.4751,
+      "model_band": {
+        "n": 44100,
+        "predicted": 0.8516,
+        "observed": 0.8572
+      },
+      "model_beats_base": true,
+      "validated": true
+    }
+  },
+  "source": "python -m slipbot.validate, 2026-10-27"
+}
